@@ -1,0 +1,28 @@
+import java.util.*;
+import java.util.Scanner;
+class countlength
+{
+ public static void main(String args[])
+  {
+   int sum=0;
+   String str;
+   Scanner sc=new Scanner(System.in);
+   System.out.print("Enter String:");
+   str=sc.nextLine();
+   String ch[]=str.split(" ");
+   int n=ch.length;
+   if(n!=0)
+   {
+     for(int i=n-1;i>=0;i--)
+      {
+
+        String st=ch[i];
+        int r=str.length();
+        sum=sum+r;
+       }
+        System.out.print(sum);
+    }
+  else
+     System.out.print(n);
+}
+} 
