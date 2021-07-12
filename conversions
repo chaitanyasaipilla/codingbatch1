@@ -24,8 +24,7 @@ case  3:   str=Integer.toHexString(d);
                 break;
 default :
             System.out.println("enter correct choice");
+}
+}
+}
 
-}
-}
-}
-0 comments on co
