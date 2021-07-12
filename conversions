@@ -1,15 +1,15 @@
 import java.util.*;
-class conversion
+class conversions
 {
 public static void main(String[] args)
 {
 String str;
 int d,n;
 Scanner sc=new Scanner(System.in);
-System.out.print("enter a decimal =");
+System.out.print("Enter a decimal:");
 d=sc.nextInt();
 System.out.println("1.Decimal to Binary\n2.Decimal to Octal\n3.Decimal to Hexa");
-System.out.print("enter your choice =");
+System.out.print("Enter your choice:");
 n=sc.nextInt();
 switch (n)
 {
@@ -23,7 +23,7 @@ case  3:   str=Integer.toHexString(d);
                 System.out.println("decimal to hexa is"+str);
                 break;
 default :
-            System.out.println("enter correct choice");
+            System.out.println("Enter correct choice");
 }
 }
 }
