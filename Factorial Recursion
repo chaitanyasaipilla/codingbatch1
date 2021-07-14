@@ -1,0 +1,21 @@
+import java.util.*;
+public class FactorialRecursion
+{
+int fact(int n)
+{
+if(n==0)
+return 1;
+else
+return(n*fact(n-1));
+}
+public static void main (String args[])
+{
+FactorialRecursion obj=new FactorialRecursion();
+Scanner sc=new Scanner(System.in);
+System.out.println("\n enter number...");
+int number =sc.nextInt();
+int fact=1;
+fact=obj.fact(number);
+System.out.println("\n Factorial of "+number+" is ="+fact);
+}
+}
