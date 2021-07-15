@@ -1,0 +1,39 @@
+import java.util.*;
+class Twin_prime
+{
+boolean isprime(int n)
+{
+int c
+=0;
+for(int i=1;i<=n;i++)
+{
+if(n%i==0)
+c+=1;
+}
+if(c==2)
+return true;
+else
+return false;
+}
+void check()
+{
+System.out.println("twin primes between 1 to 100:");
+for(int i=1;i<=100;i++)
+{
+int a=i;
+int b=i+2;
+if(b>100)
+break;
+else{
+if(isprime(a) &&isprime(b))
+System.out.println(a+","+b);
+}
+}
+}
+public static void main(String args[])
+{
+Twin_prime nc=new Twin_prime();
+nc.check();
+}
+}
+
