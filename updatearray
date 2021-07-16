@@ -1,0 +1,28 @@
+import java.util.*;
+class updatearray
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n;
+ArrayList<Integer>A=new ArrayList<Integer>();
+System.out.println("Enter the size of array");
+n=sc.nextInt();
+System.out.print("enter the update value:");
+for(int i=0;i<n;i++)
+A.add(sc.nextInt());
+System.out.print("enter the key value:");
+int key=sc.nextInt();
+if(A.contains(key))
+{
+System.out.print("enter the v:");
+int v=sc.nextInt();
+A.set(A.indexOf(key),v);
+System.out.print(A);
+}
+else
+System.out.print("False");
+}
+}
+
+
