@@ -1,0 +1,29 @@
+import java.util.*;
+class searcharray
+{
+public static void main (String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.print("ENTER THE SIZE");
+int n=sc.nextInt();
+ArrayList<Integer>A=new ArrayList<Integer>();
+System.out.print("ENTER THE ARRAY ELEMENTS:");
+for(int i=0;i<n;i++)
+{
+A.add(sc.nextInt());
+}
+System.out.println("ENTER THE SEARCH VALUE:");
+int del=sc.nextInt();
+if(A. contains(del))
+{
+int index=A.indexOf(del);
+A.remove(index);
+for(Integer i:A)
+{
+System.out.print(i+" ");
+}
+}
+else
+System.out.println("element not found");
+}
+}
