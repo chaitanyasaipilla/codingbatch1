@@ -1,0 +1,15 @@
+class Solution{
+    static int map(int n, String keys[], int arr[], String s)
+    {
+       HashMap<String,Integer>A = new HashMap<String,Integer>();
+       for(int i=0;i<n;i++)
+       A.put(keys[i],arr[i]);
+       if(A.containsKey(s))
+      {
+        
+        return A.get(s);
+       }
+        else
+         return -1;
+    }
+}
