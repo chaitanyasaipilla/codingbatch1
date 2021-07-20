@@ -1,0 +1,31 @@
+import java.util.*;
+class Hashmapfreq3{
+public static void main(String args[]){
+HashMap<String,Integer> A=new HashMap<String,Integer>();
+Scanner sc=new Scanner(System.in);
+System.out.print("enter n value :");
+int n=sc.nextInt();
+String[] x=new String[n];
+System.out.println("enter names:");
+for(int i=0;i<n;i++)
+{
+x[i]=sc.next();
+}
+for(int i=0;i<n;i++)
+{
+String key=x[i];
+if(A.containsKey(key))
+A.put(key,A.get(key)+1); 
+else 
+A.put(key,1);
+} 
+System.out.println("Repeated Names are:");
+for(String i:A.keySet())
+{
+if(A.get(i)>2)
+System.out.println(i+"="+A.get(i)+" "); 
+}}
+}
+
+
+
