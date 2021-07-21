@@ -1,0 +1,22 @@
+import java.util.*;
+import java.io.*;
+class rm{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+ArrayList<Integer> A=new ArrayList<Integer>();
+System.out.println("Enter n size:");
+int n=sc.nextInt();
+System.out.println("Enter the elements list:");
+for(int i=0;i<n;i++)
+{
+A.add(sc.nextInt());
+}
+System.out.println(A);
+System.out.println("enter key value:");
+int key=sc.nextInt();
+Iterator<Integer>itr=A.iterator();
+while(itr.hasNext()){
+if(itr.next()<=key)
+itr.remove();
+}
+System.out.println(A);}}
