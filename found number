@@ -1,0 +1,26 @@
+import java.util.Scanner;                            ///code on found method
+import java.io.*;
+
+public class { 
+    public static void main(String []args)
+    {
+        int i,n,found;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter any number");
+        int n=new int[n];
+        for(i=0;i<5;i++)
+        {
+            System.out.println("the elements are"+i);
+        }
+        if(found == n)
+        {
+            System.out.println("the element is found"+i);
+        }
+        else{
+            if(found!=n)
+            {
+                System.out.println("The element is not found"+i);
+            }
+        }
+        
+    }
